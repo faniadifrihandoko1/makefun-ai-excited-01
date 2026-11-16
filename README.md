@@ -12,15 +12,18 @@ glowing wave under a huge moon, with the words "HOLD ON." in block capitals.
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-This writes `out/entry.png` (1024×1024, about 54 KB). Inside the grader's
+This writes `out/entry.png` (1024×1024, about 57 KB). Inside the grader's
 container the program writes to `/output/entry.png` instead.
 
 ## How it works
 
-`main.ts` is a small software rasterizer (circles, ellipses, scanline
-polygons, thick polylines, gradients, a fixed-seed RNG) plus a hand-written
-PNG encoder (colour type 2 RGB, zlib level 9). The scene is fully
-deterministic: two runs write byte-identical files.
+`main.ts` is a small software rasterizer built around a `Raster` class
+(discs, ellipses, scanline polygons, thick polylines, gradients, a
+fixed-seed RNG) plus a hand-written PNG encoder (colour type 2 RGB, zlib
+level 9). The wave's crest is a densely sampled smooth curve, and the
+vignette is a per-pixel radial darkening pass. The scene is fully
+deterministic: two runs write byte-identical files (sha256
+`419d7706056487f50f10eb7ff6b1479d074a9d4c868b09100f58609bfa75b49b`).
 
 ## License
 
