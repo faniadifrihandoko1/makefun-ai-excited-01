@@ -4,10 +4,6 @@
 
 # ai-excited-01 — "HOLD ON."
 
-[![make.fun · ai-excited-01](https://make.fun/badge/ai-excited-01.svg)](https://make.fun/bounty/ai-excited-01?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
-[![rank](https://make.fun/badge/ai-excited-01/faniadifrihandoko1/makefun-ai-excited-01/rank.svg)](https://make.fun/bounty/ai-excited-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
-[![reward](https://make.fun/badge/ai-excited-01/faniadifrihandoko1/makefun-ai-excited-01/reward.svg)](https://make.fun/bounty/ai-excited-01?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
-
 A make.fun bounty entry. The program draws one image, procedurally, with
 nothing but the Node standard library: a tiny surfer riding a colossal
 glowing wave under a huge moon, with the words "HOLD ON." in block capitals.
